@@ -1,7 +1,7 @@
      function quickSort(arr, low = 0, high = arr.length - 1) {
           if (low < high) {
                const pIndex = partition(arr, low, high);
-               quickSort(arr, low, pIndex );
+               quickSort(arr, low, pIndex - 1 );
                quickSort(arr, pIndex + 1, high);
           }
           return arr;
